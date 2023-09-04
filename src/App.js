@@ -3,9 +3,8 @@ import Images from "./components/Images";
 import Jumbutron from "./components/Jumbutron";
 import SearchField from "./components/SearchField";
 import useAxios from "./hooks/useAxios";
-import TodoList from "./components/Todolist"; // Import the TodoList component
+import TodoList from "./components/Todolist";
 
-// Create Context
 export const ImageContext = createContext();
 
 function App() {
@@ -28,7 +27,7 @@ function App() {
     <Jumbutron>
       <SearchField />
     </Jumbutron>
-    <TodoList /> {/* Add the TodoList component */}
+    <TodoList />
     <Images />
   </ImageContext.Provider>
   );
