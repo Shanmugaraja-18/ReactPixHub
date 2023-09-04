@@ -1,36 +1,32 @@
-/* Reset some default styles */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  /* Set a background color and font for the entire page */
-  body {
-    background-color: black; /* Change the background color to black */
+}
+
+body {
+    background-color: black;
     font-family: Arial, sans-serif;
-    color: white; /* Change text color to white */
-  }
-  
-  /* Style the header */
-  .header {
-    background-color: transparent; /* Make the header background transparent */
+    color: white;
+}
+
+.header {
+    background-color: transparent;
     padding: 20px 0;
     text-align: center;
-  }
-  
-  /* Style the todo input and button in the header */
-  .header input[type="text"] {
+}
+
+.header input[type="text"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
     width: 70%;
     font-size: 16px;
-    background-color: #333; /* Darker input background */
-    color: white; /* Text color in input */
-  }
-  
-  .header .addBtn {
+    background-color: #333;
+    color: white;
+}
+
+.header .addBtn {
     padding: 10px;
     background: #d9d9d9;
     color: #555;
@@ -39,56 +35,52 @@
     cursor: pointer;
     transition: 0.3s;
     border-radius: 5px;
-  }
-  
-  .header .addBtn:hover {
+}
+
+.header .addBtn:hover {
     background-color: #bbb;
-  }
-  
-  /* Style the todo container */
-  .todo-container {
-    display: none; /* Hide the todo container by default */
+}
+
+.todo-container {
+    display: none;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 5px;
     padding: 20px;
-  }
-  
-  /* Style the "Display Todo" button */
-  .displayBtn {
+}
+
+.displayBtn {
     padding: 10px;
-    background: #fff; /* Change the background color to white */
-    color: #333; /* Change text color to a darker color */
+    background: #fff;
+    color: #333;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 5px;
-  }
-  
-  .displayBtn:hover {
+}
+
+.displayBtn:hover {
     background-color: #bbb;
-  }
-  
-  /* Style the todo list */
-  .todo-list {
+}
+
+.todo-list {
     background-color: white;
     border-radius: 5px;
     box-shadow: 4px 4px 5px rgba(82, 82, 82, 0.4);
     text-align: left;
     width: 80%;
     padding: 20px;
-  }
-  
-  .todo-list h2 {
+}
+
+.todo-list h2 {
     color: #f44336;
     margin-bottom: 20px;
-  }
-  
-  /* Style individual todo items */
-  .todo-item {
+}
+
+.todo-item {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
@@ -99,27 +91,23 @@
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-  }
-  
-  /* Make the todo items unselectable */
-  .todo-item {
+}
+
+.todo-item {
     user-select: none;
-  }
-  
-  /* Darker background-color on hover */
-  .todo-item:hover {
+}
+
+.todo-item:hover {
     background: #ddd;
-  }
-  
-  /* When checked, add a background color and strike out text */
-  .todo-item.checked {
+}
+
+.todo-item.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
-  }
-  
-  /* Add a "checked" mark when clicked on */
-  .todo-item.checked::before {
+}
+
+.todo-item.checked::before {
     content: "";
     position: absolute;
     border-color: #fff;
@@ -130,10 +118,9 @@
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
-  }
-  
-  /* Style the edit button */
-  .edit-button {
+}
+
+.edit-button {
     margin-left: auto;
     padding: 8px 16px;
     background-color: #f44336;
@@ -142,14 +129,13 @@
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-  }
-  
-  .edit-button:hover {
+}
+
+.edit-button:hover {
     background-color: #d32f2f;
-  }
-  
-  /* Style the delete button */
-  .delete-button {
+}
+
+.delete-button {
     margin-left: 10px;
     padding: 8px 16px;
     background-color: #f44336;
@@ -158,20 +144,18 @@
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-  }
-  
-  .delete-button:hover {
+}
+
+.delete-button:hover {
     background-color: #d32f2f;
-  }
-  
-  /* Style the edit field */
-  .edit-field {
+}
+
+.edit-field {
     display: flex;
     align-items: center;
-  }
-  
-  /* Style the edit input field */
-  .edit-field input {
+}
+
+.edit-field input {
     padding: 8px;
     border: none;
     border-radius: 5px;
@@ -180,10 +164,9 @@
     font-size: 16px;
     background-color: #eee;
     color: #333;
-  }
-  
-  /* Style the update button */
-  .update-button {
+}
+
+.update-button {
     padding: 8px 16px;
     background-color: #4caf50;
     color: white;
@@ -191,9 +174,10 @@
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-  }
-  
-  .update-button:hover {
+}
+
+.update-button:hover {
     background-color: #45a049;
-  }
+}
+
   
