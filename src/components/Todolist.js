@@ -10,7 +10,6 @@ const TodoList = () => {
   const [editItemId, setEditItemId] = useState(null);
 
   useEffect(() => {
-    // Fetch data from JSONPlaceholder API
     axios.get("https://jsonplaceholder.typicode.com/todos").then((response) => {
       setTodos(response.data);
     });
@@ -25,20 +24,17 @@ const TodoList = () => {
         completed: false,
       };
 
-      // Add a new todo at the beginning of the list
       setTodos([newTodoItem, ...todos]);
       setNewTodo("");
     }
   };
 
   const deleteTodo = (id) => {
-    // Remove a todo by its ID
     const updatedTodos = todos.filter((todo) => todo.id !== id);
     setTodos(updatedTodos);
   };
 
   const updateTodo = (id) => {
-    // Update the title of a todo by its ID
     const updatedTodos = todos.map((todo) => {
       if (todo.id === id) {
         return { ...todo, title: editText };
